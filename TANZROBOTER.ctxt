@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=welt
+comment0.target=TANZROBOTER(WELT)
+comment1.params=startx\ starty\ blickrichtung\ welt
+comment1.target=TANZROBOTER(int,\ int,\ char,\ WELT)
+comment2.params=
+comment2.target=void\ Umdrehen()
+comment3.params=
+comment3.target=void\ Vorsichtigerschritt()
+comment4.params=
+comment4.target=void\ VorsichtigerRechtschritt()
+comment5.params=
+comment5.target=void\ Tanzen()
+comment6.params=
+comment6.target=void\ LangeTanzen()
+numComments=7

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=breite\ laenge\ hoehe
+comment0.target=WELT(int,\ int,\ int)
+comment1.params=weltdatei
+comment1.target=WELT(java.lang.String)
+comment2.params=
+comment2.target=WELT()
+numComments=3
