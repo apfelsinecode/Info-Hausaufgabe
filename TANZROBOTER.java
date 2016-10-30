@@ -1,4 +1,4 @@
-import java.util.Random; 
+import java.util.Random;
 class TANZROBOTER extends ROBOTER
 {
     TANZROBOTER(WELT welt)
@@ -52,42 +52,39 @@ class TANZROBOTER extends ROBOTER
 			}
 		}
     }
-	public void Tanzen()
+public void Tanzen()
+{
+	int zufall;
+	zufall = (int) (Math.random()*4) ;
+	if(zufall==0)
 	{
-		for(int i = 0; i < 10;i++)
-		{
-			int zufall;
-			zufall = (int) (Math.random()*4) ;
-			if(zufall==0)
-			{
-				LinksDrehen();
-			}
-			else
-			{
-				if(zufall==1)
-				{
-					RechtsDrehen();
-				}
-				else
-				{
-					if(zufall==2)
-					{
-						Vorsichtigerschritt();
-					}
-					else
-					{
-						if(zufall==3)
-						{
-							VorsichtigerRechtschritt();
-						}
-						else
-						{
-						}
-					}
-				}
-			}
-		}
-	}	
+		LinksDrehen();
+	}
+	else
+	{
+	   if(zufall==1)
+	    {
+		      RechtsDrehen();
+	    }
+	     else
+	    {
+		      if(zufall==2)
+		      {
+			         Vorsichtigerschritt();
+		      }
+		      else
+	        {
+		          if(zufall==3)
+		          {
+		              VorsichtigerRechtschritt();
+		          }
+		          else
+		          {
+		          }
+		      }
+	    }
+  }
+}
 	public void LangeTanzen()
 	{
 		for(int i = 0; i < 10;i++)
@@ -95,27 +92,28 @@ class TANZROBOTER extends ROBOTER
 			Tanzen();
 		}
 	}
-	
 }
-
+/*
+:D
+*/
 /*
                    -`
-                  .o+`                 
-                 `ooo/                  
-                `+oooo:                
-               `+oooooo:               
-               -+oooooo+:              
-             `/:-:++oooo+:             
-            `/++++/+++++++:            
-           `/++++++++++++++:           
-          `/+++ooooooooooooo/`         
-         ./ooosssso++osssssso+`        
-        .oossssso-````/ossssss+`       
-       -osssssso.      :ssssssso.      
-      :osssssss/        osssso+++.     
-     /ossssssss/        +ssssooo/-     
-   `/ossssso+/:-        -:/+osssso+-  
-  `+sso+:-`                 `.-/+oso: 
+                  .o+`
+                 `ooo/
+                `+oooo:
+               `+oooooo:
+               -+oooooo+:
+             `/:-:++oooo+:
+            `/++++/+++++++:
+           `/++++++++++++++:
+          `/+++ooooooooooooo/`
+         ./ooosssso++osssssso+`
+        .oossssso-````/ossssss+`
+       -osssssso.      :ssssssso.
+      :osssssss/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
  `++:.                           `-/+/
  .`                                 `/
 */
