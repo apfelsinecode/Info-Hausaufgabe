@@ -1,4 +1,3 @@
-import java.util.Random;
 class TANZROBOTER extends ROBOTER
 {
     TANZROBOTER(WELT welt)
@@ -14,7 +13,7 @@ class TANZROBOTER extends ROBOTER
         RechtsDrehen();
         RechtsDrehen();
     }
-    public void Vorsichtigerschritt()
+    public void VorsichtigerSchritt()
     {
         if(IstWand())
         {
@@ -32,66 +31,45 @@ class TANZROBOTER extends ROBOTER
             }
         }
     }
-    public void VorsichtigerRechtschritt()
+    public void VorsichtigerRechtsSchritt()
     {
-		RechtsDrehen();
-		if(IstWand())
-		{
-			RechtsDrehen();
-		}
-		else
-		{
-			if(IstRoboter())
-			{
-				RechtsDrehen();
-			}
-			else
-			{
-				Schritt();
-				LinksDrehen();
-			}
-		}
+        RechtsDrehen();
+        if(IstWand())
+        {
+            RechtsDrehen();
+        }
+        else
+        {
+            if(IstRoboter())
+            {
+                RechtsDrehen();
+            }
+            else
+            {
+                Schritt();
+                LinksDrehen();
+            }
+        }
     }
 public void Tanzen()
 {
-	int zufall;
-	zufall = (int) (Math.random()*4) ;
-	if(zufall==0)
-	{
-		LinksDrehen();
-	}
-	else
-	{
-	   if(zufall==1)
-	    {
-		      RechtsDrehen();
-	    }
-	     else
-	    {
-		      if(zufall==2)
-		      {
-			         Vorsichtigerschritt();
-		      }
-		      else
-	        {
-		          if(zufall==3)
-		          {
-		              VorsichtigerRechtschritt();
-		          }
-		          else
-		          {
-		          }
-		      }
-	    }
-  }
+    int zufall;
+    zufall = (int) (Math.random()*4) ;
+    
+    switch (zufall) {
+        case 0: LinksDrehen(); break;
+        case 1: RechtsDrehen(); break;
+        case 2: VorsichtigerSchritt(); break;
+        case 3: VorsichtigerRechtsSchritt(); break;
+    }
 }
-	public void LangeTanzen()
-	{
-		for(int i = 0; i < 10;i++)
-		{
-			Tanzen();
-		}
-	}
+    public void Tanzen(int wiederholungen)
+    {
+        for(int i = 0; i < wiederholungen; i++)
+        {
+            Tanzen();
+        }
+    }
 }
 /*
 :D
